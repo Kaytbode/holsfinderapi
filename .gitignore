@@ -1,0 +1,5 @@
+# npm directory
+node_modules/
+
+# sacred
+.env
