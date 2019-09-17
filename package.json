@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel ./src/ -d dist/src",
     "start": "npm run build && nodemon dist/src/index.js",
-    "serve": "npm run build && node dist/src/index.js"
+    "serve": "node dist/src/index.js"
   },
   "keywords": [],
   "author": "",
