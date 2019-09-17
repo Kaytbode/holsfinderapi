@@ -9,6 +9,6 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/', routes);
 
-app.listen(5000);
+app.listen(process.env.PORT);
 
 export default app;
