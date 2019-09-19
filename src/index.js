@@ -11,6 +11,8 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/', routes);
 
+app.use((req, res, next) => res.status(404).send("Sorry can't find that!"));
+
 app.listen(process.env.PORT);
 
 export default app;

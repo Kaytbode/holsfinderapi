@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import chai from 'chai';
 
 const should = chai.should();
