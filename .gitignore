@@ -1,5 +1,13 @@
 # npm directory
 node_modules/
+npm-debug.log
+.DS_Store
 
 # sacred
 .env
+
+# babel transform
+dist/
+
+# coverage report
+.nyc_output

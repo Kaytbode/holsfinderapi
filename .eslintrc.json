@@ -1,7 +1,11 @@
 {
+    "ecmaFeatures": {
+        "modules": true
+    },
     "env": {
-        "browser": true,
-        "es6": true
+        "node": true,
+        "es6": true,
+        "mocha":true
     },
     "extends": [
         "airbnb-base"
@@ -15,5 +19,12 @@
         "sourceType": "module"
     },
     "rules": {
+        "dot-notation" : ["error", { "allowKeywords": false }],
+        "no-unused-vars": [
+            "error",
+            {
+              "varsIgnorePattern": "should"
+            }
+          ]
     }
 }
