@@ -11,6 +11,7 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use('/', routes);
 
+// eslint-disable-next-line no-unused-vars
 app.use((req, res, next) => res.status(404).send("Sorry can't find that!"));
 
 app.listen(process.env.PORT);
