@@ -7,7 +7,7 @@ npm-debug.log
 .env
 
 # babel transform
-.dist/
+dist/
 
 # coverage report
 .nyc_output
