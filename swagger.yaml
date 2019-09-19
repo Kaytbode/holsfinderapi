@@ -17,48 +17,55 @@ paths:
     get:
       tags:
         - countries
-        summary: gets all supported countries on api
-        description: ''
-        produces:
+      summary: Gets all supported countries
+      description: ''
+      produces:
         - application/json
-        responses:
-          200:
-            description: successful response
-            schema:
-              type: object
-              $ref: '#/definitions/Countries'
-          400:
-            description: bad input parameter
+      responses:
+        200:
+          description: successful response
+          schema:
+            $ref: '#/definitions/model'
+        400:
+          description: bad input parameter
   
   /api/v1/holidays/{country}/{month}:
     get:
       tags:
         - holidays
-        summary: gets holidays by country
-        description: ''
-        produces:
-          - application/json
-        parameters:
-          - name: country
-            in: path
-            description: country to get holidays from
-            required: true
-            type: string
-          - name: month
-            in: path
-            description: holidays for the particular month
-            required: true
-            type: integer
-            format: int32
-        responses:
-          200:
-            description: successful response
-            schema:
-              type: object
-              $ref: '#/definitions/Holidays'
-          400:
-            description: bad input parameter
+      summary: gets holidays by country
+      description: ''
+      produces:
+        - application/json
+      parameters:
+        - name: country
+          in: path
+          description: country to get holidays from
+          required: true
+          type: string
+        - name: month
+          in: path
+          description: holidays for the particular month
+          required: true
+          type: integer
+          format: int32
+      responses:
+        200:
+          description: successful response
+          schema:
+            $ref: '#/definitions/model'
+        400:
+          description: bad input parameter
 
+definitions:
+  model:
+    properties:
+      statusCode:
+        type: integer
+        format: int64
+      data:
+        type: array
+      
 schemes:
   - https
         
