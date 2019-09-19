@@ -8,3 +8,6 @@ npm-debug.log
 
 # babel transform
 .dist/
+
+# coverage report
+.nyc_output
