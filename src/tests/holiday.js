@@ -6,9 +6,9 @@ chai.use(chaiHttp);
 
 const countriesRoute = '/api/v1/countries';
 const wrongRoute = '/api/v1/';
-const holidaysRoute = '/api/v1/US/1';
-const holidaysRouteWithoutCountry = '/api/v1//1';
-const holidaysRouteWithoutMonth = '/api/v1/US/';
+const holidaysRoute = '/api/v1/holidays/US/1';
+const holidaysRouteWithoutCountry = '/api/v1/holidays//1';
+const holidaysRouteWithoutMonth = '/api/v1/holidays/US/';
 
 describe('Test for getting all countries', () => {
   it('should successfully return all listed countries', (done) => {
