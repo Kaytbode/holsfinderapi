@@ -1,8 +1,10 @@
 {
+    "ecmaFeatures": {
+        "modules": true
+    },
     "env": {
-        "browser": true,
-        "es6": true,
         "node": true,
+        "es6": true,
         "mocha":true
     },
     "extends": [
@@ -17,6 +19,7 @@
         "sourceType": "module"
     },
     "rules": {
+        "dot-notation" : ["error", { "allowKeywords": false }],
         "no-unused-vars": [
             "error",
             {
